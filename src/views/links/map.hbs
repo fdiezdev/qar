@@ -1,0 +1,28 @@
+<div class="cont py-5">
+    <div class="card">
+        <div class="card-header">
+            Ver ruta
+        </div>
+        <div class="card-body">
+            <div class="row">
+                {{#each route}}
+                    <div class="col-lg-4 col-sm-12 text-center">
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <h3>{{from_place}}</h3>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 text-center">
+                        <h3><i class="fas fa-arrow-right"></i></h3>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 text-center">
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <h3>{{to_place}}</h3>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+        <div class="card-footer">
+
+        </div>
+    </div>
+</div>
+<script src="../map.js"></script>

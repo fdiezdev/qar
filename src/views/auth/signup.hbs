@@ -1,0 +1,26 @@
+<div class="row py-5">
+    <div class="col-lg-4 col-sm-12 mx-auto">
+        <div class="card text-center">
+            <div class="card-body">
+                <h2>Crear una Cuenta</h2>
+                <span class="text-muted">crea una cuenta para moverte, es completamente gratis.</span>
+                <div class="p-2"></div>
+                <form action="/signup" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nombre Completo" required autocomplete="off" autofocus name="fullname">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" autocomplete="off" class="form-control" required placeholder="Tu correo electrónico" name="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" required placeholder="Crea una contraseña" name="password">
+                    </div>
+                    <button class="btn btn-block btn-primary">Validar</button>
+                </form>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">¿Ya tienes una cuenta? <a href="/login/">Iniciar Sesión</a></small>
+            </div>
+        </div>
+    </div>
+</div>
